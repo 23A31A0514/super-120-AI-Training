@@ -1,0 +1,274 @@
+Probability for AI
+1. Basic Probability
+Experiment
+Outcome
+Sample Space (S)
+Event (A)
+
+Formula:
+
+P(A)=
+Total Outcomes
+Favorable Outcomes
+	​
+
+
+Example
+Rolling a die:
+
+Probability of getting 4
+
+= 1/6
+
+2. Types of Events
+Simple event
+Compound event
+Independent events
+Dependent events
+Mutually exclusive events
+
+Example:
+
+Coin toss and die roll → Independent
+Drawing cards without replacement → Dependent
+3. Conditional Probability
+
+Very important for AI.
+
+P(A∣B)=
+P(B)
+P(A∩B)
+	​
+
+P(A∣B)=
+P(B)
+P(A∩B)
+	​
+
+=
+0.65
+0.30
+	​
+
+=0.46
+P(B)
+P(A∩B)
+P(B)=0.65
+P(A∩B)=0.30
+P(A|B) ≈ 0.46
+A∩B is the part of B where A also happens
+
+Example:
+
+Probability that a person has fever given that they have COVID.
+
+Used in:
+
+Medical diagnosis
+Recommendation systems
+Spam filtering
+4. Bayes Theorem ⭐⭐⭐⭐⭐
+
+Most important probability topic in AI.
+
+P(A∣B)=
+P(B)
+P(B∣A)P(A)
+	​
+
+P(A∣B)=
+P(B)
+P(B∣A)P(A)
+	​
+
+=
+0.25
+0.85(0.20)
+	​
+
+=0.68
+P(A)
+P(B∣A)
+P(B∣¬A)
+P(B)=0.25
+P(B|A)P(A)=0.17
+P(A|B)~0.68
+Posterior = useful evidence / total evidence
+
+Applications:
+
+Naive Bayes classifier
+Medical diagnosis
+Spam detection
+Face recognition
+5. Random Variables
+
+Two types:
+
+Discrete
+
+Examples:
+
+Dice
+Number of heads
+Continuous
+
+Examples:
+
+Height
+Weight
+Temperature
+6. Probability Distributions
+
+Know these:
+
+Bernoulli Distribution
+Binomial Distribution
+Poisson Distribution
+Uniform Distribution
+Normal (Gaussian) Distribution ⭐⭐⭐⭐⭐
+Statistics for AI
+1. Mean
+
+Average value.
+
+Mean=
+n
+∑x
+	​
+
+
+Example:
+2,4,6
+
+Mean = 4
+
+2. Median
+
+Middle value.
+
+Example:
+
+1 3 5 8 10
+
+Median = 5
+
+3. Mode
+
+Most frequently occurring value.
+
+Example:
+
+2 2 3 4 5
+
+Mode = 2
+
+4. Variance ⭐⭐⭐⭐⭐
+
+Shows how spread out the data is.
+
+Var(X)=E(X
+2
+)−[E(X)]
+2
+Var(X)=(1.4)
+2
+=1.96
+σ
+μ
+-σ
++σ
+Var(X) ≈ 1.96
+
+Low variance → Data points are close together.
+
+High variance → Data points are spread out.
+
+5. Standard Deviation
+
+Square root of variance.
+
+Small SD:
+
+9 10 11
+
+Large SD:
+
+1 10 20
+6. Z-Score
+
+Used to identify how far a value is from the mean.
+
+z=
+σ
+x−μ
+	​
+
+z=
+1
+(1.2)−(0)
+	​
+
+=1.2
+Φ(z)≈88.5%
+x
+μ
+σ
+
+Applications:
+
+Outlier detection
+Data normalization
+Anomaly detection
+7. Correlation
+
+Relationship between variables.
+
+Positive:
+
+Study ↑
+Marks ↑
+
+Negative:
+
+Price ↑
+Demand ↓
+
+No correlation:
+No clear relationship.
+
+8. Covariance
+
+Shows whether two variables move together.
+
+Positive → Same direction
+
+Negative → Opposite direction
+
+9. Normal Distribution (Bell Curve)
+
+Most ML algorithms assume data is approximately normally distributed.
+
+Properties:
+
+Bell-shaped curve
+Mean = Median = Mode
+Symmetric around the center
+10. Sampling
+Random Sampling
+Stratified Sampling
+Systematic Sampling
+11. Hypothesis Testing (Basic)
+
+Know:
+
+Null hypothesis (H₀)
+Alternative hypothesis (H₁)
+p-value
+Significance level
+12. Bias and Variance
+
+Very important in Machine Learning.
+
+High Bias → Underfitting
+High Variance → Overfitting
