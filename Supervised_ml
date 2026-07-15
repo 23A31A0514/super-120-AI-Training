@@ -1,0 +1,207 @@
+Supervised Machine Learning (ML)
+
+Supervised Learning is the most commonly used type of Machine Learning.
+
+Definition
+
+Supervised Machine Learning is a type of ML where the model learns from labeled data.
+
+Input (Features) → X
+Correct Output (Label/Target) → y
+
+The model learns the relationship between X → y so it can predict the output for new, unseen data.
+
+Example
+
+Hours Studied	Pass/Fail
+2	Fail
+4	Pass
+6	Pass
+1	Fail
+
+The model learns from this data and predicts whether a new student will pass or fail.
+
+Workflow of Supervised Learning
+Training Data
+      ↓
+Input (X) + Output (y)
+      ↓
+Train Model
+      ↓
+Model Learns Pattern
+      ↓
+New Input
+      ↓
+Prediction
+Types of Supervised Learning
+
+There are 2 types:
+
+1. Classification
+
+Predicts categories or classes.
+
+Examples:
+
+Spam or Not Spam
+Cancer or No Cancer
+Fraud or Not Fraud
+Cat or Dog
+Pass or Fail
+
+Example:
+
+Email	Output
+"Win ₹10 lakh"	Spam
+"Meeting at 5 PM"	Not Spam
+
+Common Algorithms:
+
+Logistic Regression
+Decision Tree
+Random Forest
+Naive Bayes
+Support Vector Machine (SVM)
+K-Nearest Neighbors (KNN)
+2. Regression
+
+Predicts continuous numerical values.
+
+Examples:
+
+House Price
+Temperature
+Salary
+Stock Price (with limitations)
+Rainfall Amount
+
+Example:
+
+Area (sq.ft)	Price
+1000	₹40 Lakh
+1200	₹50 Lakh
+1500	₹65 Lakh
+
+The model predicts the price of a new house.
+
+Common Algorithms:
+
+Linear Regression
+Decision Tree Regressor
+Random Forest Regressor
+Support Vector Regression (SVR)
+Training Process
+Step 1: Collect Data
+
+Example:
+
+Age	Salary	Bought Laptop
+22	25000	No
+35	50000	Yes
+40	70000	Yes
+Step 2: Split Data
+
+Typically:
+
+Training Set → 80%
+Testing Set → 20%
+Step 3: Train the Model
+
+The algorithm learns patterns from the training data.
+
+Step 4: Test the Model
+
+Evaluate how well it performs on unseen data.
+
+Step 5: Make Predictions
+
+Example:
+
+Input:
+
+Age = 30
+Salary = ₹45,000
+
+Output:
+
+Will Buy Laptop = Yes
+Common Algorithms
+1. Linear Regression
+
+Used for predicting continuous values.
+
+Example:
+
+House price prediction
+2. Logistic Regression
+
+Used for binary classification.
+
+Example:
+
+Pass/Fail
+Spam Detection
+3. Decision Tree
+
+Makes decisions by asking a series of questions.
+
+Example:
+
+Salary > 50K?
+      |
+   Yes/No
+      |
+ Buy / Don't Buy
+4. Random Forest
+
+A collection of many decision trees.
+
+Advantages:
+
+Higher accuracy
+Less overfitting
+Robust to noisy data
+5. K-Nearest Neighbors (KNN)
+
+Predicts based on the labels of the nearest data points.
+
+Example:
+If most nearby houses are expensive, the new house is also likely to be expensive.
+
+6. Naive Bayes
+
+Based on Bayes' Theorem.
+
+Used for:
+
+Spam detection
+Text classification
+Sentiment analysis
+7. Support Vector Machine (SVM)
+
+Finds the best boundary (hyperplane) to separate different classes.
+
+Example:
+
+Face recognition
+Image classification
+Advantages
+High accuracy with labeled data.
+Easy to evaluate using known outputs.
+Widely used in industry.
+Many well-established algorithms.
+Disadvantages
+Requires a large amount of labeled data.
+Labeling data can be expensive and time-consuming.
+May overfit if not properly regularized.
+Performance depends on the quality of the training data.
+Real-World Applications
+Email spam detection
+House price prediction
+Credit card fraud detection
+Medical diagnosis
+Customer churn prediction
+Loan approval
+Image classification
+Speech recognition
+Sentiment analysis
