@@ -1,0 +1,148 @@
+Unsupervised Machine Learning (ML)
+
+Unsupervised Learning is a type of Machine Learning where the model learns from unlabeled data.
+
+Unlike supervised learning, there are no correct answers (labels) provided.
+
+Input (Features) → X
+Output (Labels) → ❌ Not Available
+
+The model tries to find hidden patterns, groups, or relationships in the data.
+
+Definition
+
+Unsupervised Learning is a machine learning technique where the algorithm learns from unlabeled data to discover hidden patterns, clusters, or structures without knowing the correct output.
+
+Workflow
+Unlabeled Data
+      ↓
+Train Model
+      ↓
+Find Hidden Patterns
+      ↓
+Clusters / Relationships
+Types of Unsupervised Learning
+
+There are 2 main types:
+
+1. Clustering ⭐⭐⭐⭐⭐
+
+Groups similar data points together.
+
+Example
+
+Suppose you have customer data:
+
+Customer	Age	Income
+A	22	25K
+B	24	27K
+C	45	80K
+D	47	85K
+
+The algorithm automatically groups them as:
+
+Cluster 1: Young customers
+Cluster 2: High-income customers
+
+No one tells the model which customer belongs to which group—it discovers the groups itself.
+
+Algorithms
+K-Means
+Hierarchical Clustering
+DBSCAN
+Applications
+Customer Segmentation
+Social Network Analysis
+Image Segmentation
+Document Grouping
+2. Association ⭐⭐⭐⭐
+
+Finds relationships between items.
+
+Example
+
+Market Basket Analysis:
+
+Milk → Bread
+Bread → Butter
+
+The algorithm learns that customers who buy Milk often buy Bread too.
+
+Algorithms
+Apriori
+FP-Growth
+Applications
+Amazon Recommendations
+Netflix Recommendations
+Shopping Websites
+Common Algorithms
+1. K-Means Clustering ⭐⭐⭐⭐⭐
+
+Most popular clustering algorithm.
+
+Steps
+Choose K (number of clusters)
+Select K centroids
+Assign each point to the nearest centroid
+Update centroids
+Repeat until clusters stabilize
+
+Example:
+
+Students' Marks
+
+40 42 45
+90 92 95
+
+↓
+
+Cluster 1
+Cluster 2
+2. Hierarchical Clustering
+
+Builds clusters like a tree.
+
+        All Data
+        /     \
+      A         B
+     / \       / \
+
+No need to specify the number of clusters in advance.
+
+3. DBSCAN
+
+Groups data based on density.
+
+Advantages:
+
+Finds clusters of arbitrary shapes.
+Detects outliers (noise).
+No need to specify K.
+4. Apriori Algorithm
+
+Used for association rule mining.
+
+Example:
+
+If customer buys Bread
+↓
+
+Customer also buys Butter
+Advantages
+No labeled data required.
+Discovers hidden patterns.
+Useful for exploratory data analysis.
+Helps in feature engineering.
+Disadvantages
+Harder to evaluate because there are no correct labels.
+Results can be difficult to interpret.
+Performance depends on the chosen algorithm and parameters.
+Real-World Applications
+Customer Segmentation
+Recommendation Systems
+Fraud Detection (finding unusual patterns)
+Image Compression
+Market Basket Analysis
+Social Network Analysis
+Gene Clustering
+News Article Grouping
