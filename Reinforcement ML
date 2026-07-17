@@ -1,0 +1,173 @@
+Reinforcement Learning (RL)
+
+Definition:
+Reinforcement Learning is a type of Machine Learning where an agent learns by interacting with an environment. The agent performs actions, receives rewards or penalties, and improves its decisions over time to maximize the total reward.
+
+Unlike supervised learning, there are no correct labels. The agent learns through trial and error.
+
+Basic Components
+1. Agent
+
+The learner or decision-maker.
+
+Example:
+
+Robot
+Self-driving car
+Chess-playing AI
+2. Environment
+
+The world in which the agent operates.
+
+Example:
+
+Chess board
+Road
+Video game
+3. State (S)
+
+The current situation of the environment.
+
+Example:
+
+In chess: Current board configuration
+In a maze: Current cell
+In a game: Current level
+4. Action (A)
+
+A move the agent can make.
+
+Examples:
+
+Move left
+Move right
+Accelerate
+Brake
+5. Reward (R)
+
+Feedback received after taking an action.
+
+Examples:
+
++10 for winning
++1 for collecting a coin
+-5 for hitting an obstacle
+
+The goal is to maximize cumulative reward, not just the immediate reward.
+
+6. Policy (π)
+
+A strategy that tells the agent what action to take in each state.
+
+Example:
+
+If obstacle ahead → Turn Left
+If road is clear → Move Forward
+7. Episode
+
+One complete interaction from the start state to the terminal state.
+
+Examples:
+
+One full game of chess
+One race in a driving simulator
+8. Goal
+
+Learn the best policy that maximizes the total reward over time.
+
+How Reinforcement Learning Works
+        Action
+Agent -----------> Environment
+  ^                    |
+  |                    |
+  |                    |
+Reward + Next State <---
+
+Steps:
+
+Agent observes the current state.
+Agent chooses an action.
+Environment changes state.
+Environment gives a reward.
+Agent learns from the reward.
+Process repeats until the episode ends.
+Example: Maze
+
+Suppose a robot is in a maze.
+
+S → □ □ □
+    □ X □
+    □ □ G
+S = Start
+G = Goal
+X = Obstacle
+
+Rewards:
+
+Reach Goal → +100
+Hit Obstacle → -50
+Normal Move → -1
+
+The robot tries different paths, learns from rewards and penalties, and eventually discovers the shortest safe path.
+
+Types of Reinforcement Learning
+1. Model-Based RL
+The agent has or learns a model of the environment.
+It can plan future actions.
+
+Example:
+
+Planning a route using a map.
+2. Model-Free RL
+The agent learns directly from experience.
+No model of the environment is required.
+
+Examples:
+
+Q-Learning
+SARSA
+Deep Q Networks (DQN)
+Exploration vs Exploitation
+Exploration
+
+Try new actions to discover potentially better rewards.
+
+Example:
+Trying a different path in a maze.
+
+Exploitation
+
+Choose the action known to give the highest reward.
+
+Example:
+Using the shortest path already discovered.
+
+A good RL agent balances both.
+
+Applications of Reinforcement Learning
+🤖 Robotics
+🚗 Self-driving cars
+🎮 Game AI (Chess, Go, Atari)
+📈 Stock trading
+📡 Network routing
+🎯 Recommendation systems
+🏭 Industrial automation
+Advantages
+Learns without labeled data.
+Can solve sequential decision-making problems.
+Improves performance with experience.
+Can handle dynamic environments.
+Disadvantages
+Requires many interactions with the environment.
+Training can be slow.
+Reward design is often difficult.
+Can be computationally expensive.
+Popular RL Algorithms
+Q-Learning
+SARSA
+Deep Q Network (DQN)
+Policy Gradient
+REINFORCE
+Actor-Critic
+PPO (Proximal Policy Optimization)
+A3C (Asynchronous Advantage Actor-Critic)
