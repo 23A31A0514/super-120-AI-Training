@@ -1,0 +1,226 @@
+Deep Learning (DL)
+
+Definition:
+Deep Learning is a subset of Machine Learning that uses Artificial Neural Networks (ANNs) with multiple hidden layers to automatically learn patterns from large amounts of data.
+
+It is inspired by the structure of the human brain.
+
+Deep Learning Architecture
+Input Layer  →  Hidden Layer(s)  →  Output Layer
+
+Example:
+
+Image (Cat)
+
+     Input
+      ○ ○ ○ ○
+         │
+    Hidden Layer
+      ○ ○ ○ ○
+         │
+    Hidden Layer
+      ○ ○ ○
+         │
+      Output
+     Cat / Dog
+Main Components
+1. Input Layer
+
+Receives the input data.
+
+Examples:
+
+Image pixels
+Text
+Audio
+Sensor data
+2. Hidden Layers
+
+These layers learn features automatically.
+
+For an image:
+
+First hidden layer → detects edges
+Second hidden layer → detects shapes
+Third hidden layer → detects objects
+
+This automatic feature extraction is one of the biggest advantages of deep learning.
+
+3. Output Layer
+
+Produces the final prediction.
+
+Examples:
+
+Cat
+Dog
+Car
+Human
+What is a Neuron?
+
+A neuron is the basic processing unit in a neural network.
+
+It:
+
+Receives inputs
+Multiplies them by weights
+Adds a bias
+Applies an activation function
+Produces an output
+Weights
+
+Weights determine the importance of each input.
+
+Example:
+
+Input1 = 5
+Weight = 0.8
+
+Contribution = 5 × 0.8 = 4
+
+Weights are updated during training.
+
+Bias
+
+Bias shifts the output and helps the model fit data better.
+
+Equation:
+
+Output = (Input × Weight) + Bias
+Activation Function
+
+It decides whether a neuron should be activated.
+
+Without an activation function, a neural network behaves like a simple linear model.
+
+Common activation functions:
+
+ReLU (Most Common)
+f(x)=max(0,x)
+Positive input → same value
+Negative input → 0
+Sigmoid
+f(x)=
+1+e
+−x
+1
+	​
+
+
+Output range:
+
+0 to 1
+
+Used for binary classification.
+
+Tanh
+
+Output range:
+
+-1 to 1
+Softmax
+
+Used for multi-class classification.
+
+Example:
+
+Cat
+Dog
+Horse
+
+Returns probabilities that sum to 1.
+
+Forward Propagation
+
+Data moves from input to output.
+
+Input
+ ↓
+Hidden Layer
+ ↓
+Hidden Layer
+ ↓
+Prediction
+Loss Function
+
+Measures how wrong the prediction is.
+
+Examples:
+
+Mean Squared Error (MSE)
+Cross Entropy Loss
+
+Smaller loss means better predictions.
+
+Backpropagation
+
+Backpropagation calculates how much each weight contributed to the error and updates the weights to reduce the loss.
+
+Process:
+
+Prediction
+      ↓
+Calculate Loss
+      ↓
+Backpropagation
+      ↓
+Update Weights
+Gradient Descent
+
+Gradient Descent updates weights to minimize the loss.
+
+Update rule:
+
+New Weight=Old Weight−Learning Rate×Gradient
+
+The learning rate controls how large each update step is.
+
+Epoch
+
+One complete pass through the entire training dataset.
+
+Example:
+
+Dataset: 10,000 images
+One epoch = training on all 10,000 images once
+Batch Size
+
+The number of training samples processed before updating the weights.
+
+Example:
+
+Dataset = 1000 images
+Batch size = 100
+Number of batches = 10
+Common Neural Network Types
+Artificial Neural Network (ANN) – Tabular data, simple prediction tasks.
+Convolutional Neural Network (CNN) – Images, object detection, face recognition.
+Recurrent Neural Network (RNN) – Sequential data like text and speech.
+LSTM – A type of RNN that handles long-term dependencies better.
+Transformer – Powers modern language models like ChatGPT.
+Applications
+Image recognition
+Speech recognition
+Machine translation
+Chatbots
+Self-driving cars
+Medical diagnosis
+Fraud detection
+Recommendation systems
+Advantages
+Learns features automatically
+Very accurate with large datasets
+Excellent for images, audio, and text
+Handles complex patterns
+Disadvantages
+Requires large amounts of data
+Computationally expensive
+Needs powerful hardware (GPUs)
+Often difficult to interpret ("black box")
+Machine Learning vs Deep Learning
+Machine Learning	Deep Learning
+Manual feature engineering	Automatic feature learning
+Works well with smaller datasets	Performs best with large datasets
+Faster to train	Slower to train
+Lower computational cost	Higher computational cost
+Simpler models	Multi-layer neural networks
