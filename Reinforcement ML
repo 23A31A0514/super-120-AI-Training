@@ -1,4 +1,4 @@
-Reinforcement Learning (RL)
+Reinforcement Learning 
 
 Definition:
 Reinforcement Learning is a type of Machine Learning where an agent learns by interacting with an environment. The agent performs actions, receives rewards or penalties, and improves its decisions over time to maximize the total reward.
