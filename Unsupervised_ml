@@ -10,7 +10,6 @@ Output (Labels) → ❌ Not Available
 The model tries to find hidden patterns, groups, or relationships in the data.
 
 Definition
-
 Unsupervised Learning is a machine learning technique where the algorithm learns from unlabeled data to discover hidden patterns, clusters, or structures without knowing the correct output.
 
 Workflow
